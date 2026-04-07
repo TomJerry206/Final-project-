@@ -44,6 +44,10 @@ body {
     padding: 20px;
 }
 
+.item {
+    text-align: center;
+}
+
 /* Gallery FLEX */
 .gallery {
     display: flex;
