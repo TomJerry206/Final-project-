@@ -1,0 +1,72 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f6f8;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Navigation - FLEX */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background: #222;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Gallery FLEX */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Images */
+img {
+    width: 200px;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Hover */
+img:hover {
+    transform: scale(1.1);
+}
+
+/* nth-child */
+.gallery img:nth-child(even) {
+    border-radius: 50%;
+}
